@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华体会 · 每日查询与对照阅读</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9fafb;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Georgia", "Times New Roman", serif;
+            color: #1e1e1e;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page-wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2.4rem 1.6rem 3.6rem;
+        }
+
+        /* hero 区：杂志题头 */
+        .hero {
+            border-bottom: 1px solid #d9d9d9;
+            padding-bottom: 2rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .hero-sup {
+            font-family: "Inter", "Helvetica Neue", sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #8c8c8c;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 1.15;
+            margin-bottom: 0.6rem;
+            color: #0b0b0b;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #5c5c5c;
+            max-width: 600px;
+            margin-top: 0.2rem;
+        }
+
+        /* 正文窄栏 */
+        .content-block {
+            margin-bottom: 2.8rem;
+        }
+
+        .content-block h2 {
+            font-size: 1.4rem;
+            font-weight: 450;
+            letter-spacing: 0.02em;
+            border-left: 3px solid #b0b0b0;
+            padding-left: 1rem;
+            margin: 2rem 0 1.2rem;
+        }
+
+        .content-block p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            word-spacing: 0.02em;
+        }
+
+        .content-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 标注卡片（氛围） */
+        .card-note {
+            background: #ffffff;
+            border: 1px solid #e3e3e3;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0 2.4rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .card-note p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .card-note p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-note .label {
+            font-family: "Inter", sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.08em;
+            color: #7a7a7a;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* 块引用 / 延伸 */
+        .inset-quote {
+            background: #f3f4f6;
+            padding: 1.6rem 2rem;
+            border-radius: 2px;
+            margin: 2rem 0;
+            font-style: normal;
+        }
+
+        .inset-quote p {
+            margin-bottom: 0.4rem;
+        }
+
+        .inset-quote .source {
+            font-size: 0.85rem;
+            color: #6b6b6b;
+            font-family: "Inter", sans-serif;
+        }
+
+        /* 页尾 */
+        .footer-note {
+            border-top: 1px solid #d9d9d9;
+            padding-top: 2.2rem;
+            margin-top: 3.6rem;
+            font-size: 0.95rem;
+            color: #4a4a4a;
+        }
+
+        .footer-note p {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-note a {
+            color: #1e1e1e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #b0b0b0;
+            font-weight: 400;
+        }
+
+        .footer-note a:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        a {
+            transition: all 0.15s ease;
+        }
+
+        /* 响应式 */
+        @media (max-width: 540px) {
+            .page-wrap {
+                padding: 1.8rem 1.2rem 2.8rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 0.95rem;
+            }
+            .content-block h2 {
+                font-size: 1.2rem;
+            }
+            .card-note,
+            .inset-quote {
+                padding: 1.2rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <!-- hero -->
+    <div class="hero">
+        <div class="hero-sup">日常查询 · 对照阅读</div>
+        <h1>华体会<br>从检索到延伸</h1>
+        <p>一个围绕信息整合、术语对照与背景查阅的松散笔记场域</p>
+    </div>
+
+    <!-- 第一段：日常查询的出发点 -->
+    <div class="content-block">
+        <h2>查询的习惯</h2>
+        <p>多数时候，我们打开一个网站并非为了浏览首页，而是带着具体的问题：某个概念的准确定义、某条数据的来源、某段表述的上下文。在这种需求驱动下，<a href="https://mzh-hth.com.cn">华体会</a>逐渐成为一种介于知识库与个人索引之间的存在——它不追求全面的百科式覆盖，而是更接近一个经过筛选的对照集，将散落在不同信源里的信息拉近，方便反复核对。</p>
+        <p>这种使用场景决定了它的内容形态：条目通常简洁，配以必要的引用或注释；如果某个话题存在相互矛盾的资料，也会并排陈列，留给阅读者自行判断。检索在这里不只是终点，更多时候是新一轮延伸阅读的起点。</p>
+    </div>
+
+    <!-- 第二段：对照与背景说明 -->
+    <div class="content-block">
+        <h2>对照中的发现</h2>
+        <p>信息的价值往往在比较中浮现。同一术语在不同学科、不同语境下可能指向截然不同的概念；同一事件在不同记录里会呈现相异的细节。正是这些差异构成了理解事物的真正厚度。《华体会》中专门设有“对照”板块，将相近术语、易混淆条目、以及跨语言表述并置，并附上简明的背景说明。</p>
+
+        <div class="inset-quote">
+            <p>“与其说我们在寻找一个标准答案，不如说我们在练习同时容纳多种版本。对照不是为了消除歧义，而是为了让分歧可见。”</p>
+            <p class="source">—— 摘自站内随笔 ·《条目之外》</p>
+        </div>
+
+        <p>以日常使用经验来看，这种对照式阅读尤其适合以下场景：查阅翻译时比较不同译法的使用频率和语境、核对统计数据时追溯原始出处、阅读二手文献时寻找被转述的原文。每一次对照，都是对既有认知的一次微调。</p>
+    </div>
+
+    <!-- 第三段：延伸阅读的节奏 -->
+    <div class="content-block">
+        <h2>从条目到脉络</h2>
+        <p>单一条目无论写得多么详尽，始终只是知识网络中的一个节点。因此《华体会》在每条内容末尾都会提供“延伸阅读”建议，可能是另一篇关联条目、一份PDF文档，或者一段公开的访谈记录。这种设计试图让阅读者从“查一个词”自然过渡到“读一段话”，再到“理解一个领域”。</p>
+
+        <div class="card-note">
+            <span class="label">🔍 使用提示</span>
+            <p>如果你在查找某个术语时发现多条相互参照的记录，不妨顺着链接逐条阅读。很多看似孤立的条目，在连续阅读后往往会浮现出一幅更完整的图景。这也是《华体会》最初被设计成网状而非树状结构的原因。</p>
+            <p>站内不设排行榜、不追踪热点，所有内容按字母/拼音顺序排列，偶尔以专题形式组织。更新频率不高，但每次更新都会仔细标注修改时间和依据。</p>
+        </div>
+
+        <p>延伸阅读的节奏因人而异。有人习惯一次性读完所有关联条目，有人则把链接当作书签，隔几天再回头细读。无论哪种方式，重要的是保留随时返回复查的可能——这正是《华体会》希望提供的基础功能：一个安静、可信、可反复查阅的对照空间。</p>
+    </div>
+
+    <!-- 页尾：访问提示 -->
+    <div class="footer-note">
+        <p>目前《华体会》仍以静态页面形式维护，所有内容均可直接浏览。如果你在查阅过程中发现了值得补充的条目或需要修正的对照信息，可以通过站内提供的联系方式提交反馈。</p>
+        <p style="margin-top: 1.4rem;">—— 继续阅读或开始新的查询，请访问 <a href="https://mzh-hth.com.cn">华体会</a>。</p>
+        <p style="margin-top: 0.4rem; font-size: 0.85rem; color: #8c8c8c;">内容持续修订 · 最近更新 2025年4月</p>
+    </div>
+
+</div>
+</body>
+</html>
