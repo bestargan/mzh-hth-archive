@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>看球直播 – 关于站点</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Helvetica, sans-serif;
+      line-height: 1.7;
+      background-color: #f6f8fc;
+      color: #1f2937;
+    }
+
+    /* 深色 hero 区 */
+    .hero {
+      background: linear-gradient(135deg, #0b1120 0%, #1c2a43 100%);
+      color: #f0f3fa;
+      padding: 4.5rem 1.5rem 3.8rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: #7aa2f7;
+      margin: 2rem auto 0;
+      border-radius: 4px;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 0 auto;
+      font-weight: 350;
+    }
+
+    /* 主容器 */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2.8rem 2rem 4rem;
+    }
+
+    /* 每个区块 */
+    .section-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 2.4rem 2.2rem;
+      margin-bottom: 2.6rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+      transition: box-shadow 0.2s;
+    }
+
+    .section-card:hover {
+      box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      border-left: 5px solid #7aa2f7;
+      padding-left: 1rem;
+      margin-bottom: 1.4rem;
+      color: #111827;
+    }
+
+    .section-text {
+      color: #374151;
+      font-size: 1rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .section-text a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .section-text a:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    /* 优势列表 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem 2rem;
+      margin-top: 0.6rem;
+    }
+
+    .feature-item {
+      background: #f8faff;
+      padding: 1.2rem 1.2rem 1.2rem 1.8rem;
+      border-radius: 18px;
+      border-left: 4px solid #7aa2f7;
+    }
+
+    .feature-item strong {
+      display: block;
+      font-weight: 600;
+      color: #0b1b2f;
+      margin-bottom: 0.3rem;
+      font-size: 1.05rem;
+    }
+
+    .feature-item p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+
+    /* FAQ 摘要 */
+    .faq-group {
+      margin-top: 0.2rem;
+    }
+
+    .faq-q {
+      font-weight: 500;
+      color: #1f2a44;
+      margin: 1.2rem 0 0.2rem 0;
+    }
+
+    .faq-a {
+      color: #4b5563;
+      padding-left: 1.2rem;
+      border-left: 2px solid #d1d9e6;
+      margin-bottom: 0.8rem;
+    }
+
+    .faq-a a {
+      color: #2563eb;
+    }
+
+    /* 底部 */
+    .site-footer {
+      border-top: 1px solid #dfe6f0;
+      margin-top: 2.8rem;
+      padding-top: 2.2rem;
+      text-align: center;
+      color: #5f6c84;
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-links a {
+      color: #1f3a6b;
+      text-decoration: none;
+      margin: 0 0.8rem;
+      transition: color 0.15s;
+    }
+
+    .footer-links a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .footer-meta {
+      font-size: 0.8rem;
+      color: #8895aa;
+    }
+
+    /* 响应式 */
+    @media (max-width: 680px) {
+      .hero h1 { font-size: 1.9rem; }
+      .hero { padding: 3rem 1.2rem 2.8rem; }
+      .container { padding: 1.8rem 1.2rem 3rem; }
+      .section-card { padding: 1.8rem 1.2rem; }
+      .feature-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+      .feature-item { padding: 1rem 1rem 1rem 1.4rem; }
+      .section-title { font-size: 1.3rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.6rem; }
+      .hero .sub { font-size: 0.95rem; }
+      .container { padding: 1.2rem 0.8rem 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>关于「看球直播」</h1>
+    <p class="sub">一个提供稳定赛事直播访问的站点，面向习惯在网页上关注比赛的观众</p>
+  </header>
+
+  <main class="container">
+
+    <!-- 介绍区：站点说明 -->
+    <div class="section-card">
+      <h2 class="section-title">站点简介</h2>
+      <p class="section-text">
+        <a href="https://ssl-kanqiu.com">看球直播</a> 是一个以体育赛事直播为方向的导航与聚合站。它本身不制作内容，而是为用户汇集来自多个渠道的可靠直播链接，帮助观众快速找到正在进行的比赛。站点界面简洁，不添加冗余弹窗或无关推荐，重点在于让用户节省检索时间。
+      </p>
+      <p class="section-text">
+        无论是足球、篮球还是其他热门赛事，你都能在这里找到对应的直播页入口。网站会持续更新源地址，并对失效链接进行标记或移除，尽量维持可用的观赛通道。
+      </p>
+    </div>
+
+    <!-- 优势区：特点与使用场景 -->
+    <div class="section-card">
+      <h2 class="section-title">特点与适用场景</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <strong>🌐 多源聚合</strong>
+          <p>每场比赛通常会提供 2–3 个备用直播源，避免因单一源失效而无法观看。</p>
+        </div>
+        <div class="feature-item">
+          <strong>🧭 适合桌面与移动端</strong>
+          <p>页面适配常用浏览器，在手机上也能够正常浏览和切换直播链接。</p>
+        </div>
+        <div class="feature-item">
+          <strong>🧩 不要求注册</strong>
+          <p>无需登录或留下个人信息，直接访问即可查看当前可用的直播列表。</p>
+        </div>
+        <div class="feature-item">
+          <strong>📋 赛程指引</strong>
+          <p>首页会展示近期重点赛事的时间与对阵，方便提前规划观赛安排。</p>
+        </div>
+      </div>
+      <p class="section-text" style="margin-top: 1.4rem;">
+        如果你是偶尔打开网页看场球、不想安装额外软件的用户，<a href="https://ssl-kanqiu.com">看球直播</a> 或许是一个不复杂的选择。
+      </p>
+    </div>
+
+    <!-- 说明区：可信说明 + 提示 -->
+    <div class="section-card">
+      <h2 class="section-title">内容说明与提示</h2>
+      <p class="section-text">
+        站点收录的直播链接均来自互联网公开渠道，运营方会对来源做基本的可用性检查，但无法保证每个链接始终有效或画质一致。部分比赛可能因版权限制或区域政策而无法播放，这属于常见情况。
+      </p>
+      <p class="section-text">
+        建议在使用时配备一定的网络环境（如稳定的宽带或移动网络），部分源可能需要允许弹出窗口或启用 JavaScript。如果你遇到某个链接无法打开，可以尝试切换到备用源或等待一段时间后刷新页面。
+      </p>
+      <p class="section-text">
+        我们不会在站点中嵌入任何恶意脚本或劫持代码，也从未要求用户提供敏感信息。如果你对播放页面有任何疑虑，建议关闭广告拦截插件白名单或临时使用浏览器的无痕模式。
+      </p>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section-card">
+      <h2 class="section-title">常见疑问摘要</h2>
+      <div class="faq-group">
+        <div class="faq-q">⚽ 需要安装播放器或插件吗？</div>
+        <div class="faq-a">通常不需要。大多数直播源基于网页播放器（HLS / 网页 Flash 兼容模式），只要浏览器保持更新即可。</div>
+
+        <div class="faq-q">⚾ 为什么某些比赛找不到直播？</div>
+        <div class="faq-a">可能原因：比赛尚未开始、版权限制、或暂无稳定源。你可以稍后再试，或者关注赛程预告中的“待定”标识。</div>
+
+        <div class="faq-q">🏀 移动端可以正常使用吗？</div>
+        <div class="faq-a">可以。但部分第三方直播源在 iOS 上可能存在格式兼容问题，建议优先尝试系统自带浏览器（Safari / Chrome）。</div>
+
+        <div class="faq-q">🎾 链接跳转后显示空白或广告过多？</div>
+        <div class="faq-a">
+          某些源可能会加载外部广告，这与本站无关。你可以关闭当前标签页，返回 
+          <a href="https://ssl-kanqiu.com">看球直播</a> 
+          选择其他备用链接。我们也在持续替换体验较差的源。
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="https://ssl-kanqiu.com">看球直播</a>
+        <a href="#">赛事列表</a>
+        <a href="#">使用反馈</a>
+      </div>
+      <p class="footer-meta">仅提供链接聚合服务 · 页面内容仅供参考 · 请合理使用</p>
+    </footer>
+  </main>
+</body>
+</html>
